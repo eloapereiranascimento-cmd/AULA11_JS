@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Positivo, Negativo ou Nulo</title>
+</head>
+<body>
+    <h4>Digite um número:</h4>
+    <input type="number" id="numero">
+    <button onclick="verificar()">Verificar</button>
+
+    <script>
+        function verificar() {
+            var num = parseFloat(document.getElementById("numero").value);
+
+            if (num > 0) {
+                alert("O número digitado é positivo.");
+            } else {
+                if (num < 0) {
+                    alert("O número digitado é negativo.");
+                } else {
+                    alert("O número digitado é nulo.");
+                }
+            }
+        }
+    </script>
+</body>
+</html>
